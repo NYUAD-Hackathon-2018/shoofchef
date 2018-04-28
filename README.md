@@ -5,13 +5,13 @@
 
 ## Problem Description
 
-  - Provide a visual aid
+  - Provide users with a visual aid
   - Encourage tourists to try local food
-  - Inform about specific food allergies & diets
+  - Inform users about specific food allergies & diets
 
 ## Solution
 
-Mobile app to provide tourists a way to visualize Arabic menus. The main features include:
+Mobile app providing tourists a way to visualize Arabic menus. Main features include:
   - Realtime visual aid of key Arabic dishes
   - Description of ingredients
   - Rating system of dishes
