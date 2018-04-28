@@ -1,3 +1,5 @@
+![Logo](shoofchef_line_lockup.png)
+
 # شوف شاف • ShoofChef
 
 شوف شاف is a mobile app that transforms Arabic menus to gorgeous visualizations to help tourists in their exotic local food selection.
