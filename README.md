@@ -1,4 +1,4 @@
-![Logo](shoofchef_line_lockup.png)
+![Logo](images/shoofchef_line_lockup.png)
 
 # ShoofChef • شوف شاف
 
@@ -31,7 +31,7 @@ Mobile app providing tourists a way to visualize Arabic menus. Main features inc
 
   - **Rumail Ali Memon** | NYUAD • <rm4631@nyu.edu>
   - **Rania Fekih** | National Institut of Applied Science and Technologie • <raniafekih@hotmail.com>
-  - **Noor Naqvi** | Universitat Politècnica de Catalunya • <noorzehra07@gmail.com>
+  - **Noor Zehra Naqvi** | Universitat Politècnica de Catalunya • <noorzehra07@gmail.com>
 
 **Disclaimer:** Team members contributed to various parts of the hack. This breakdown is only a generalization.
 

@@ -2,6 +2,7 @@ from flask import Flask, request
 from flask_restful import Resource, Api
 from sqlalchemy import create_engine
 from json import dumps
+import json
 from flask_jsonpify import jsonify
 import scraping
 
@@ -28,7 +29,7 @@ def api_image_description():
                     finalResponse.append(result)
             i = i + 1
         print(finalResponse)
-        return finalResponse
+        return json.dumps(finalResponse)
 
 
 if __name__ == '__main__':
