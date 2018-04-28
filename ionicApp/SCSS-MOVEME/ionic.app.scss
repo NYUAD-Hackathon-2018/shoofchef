@@ -1,0 +1,55 @@
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+.nav {
+	background-color: rgb(255,255,255);
+	opacity: 0.6;
+	padding-top: 10px;
+	color: Grey;
+}
+
+.text {
+	font-family: "Lucida Console", cursive, sans-serif;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.background {
+	background-color: #404341;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+.text2 {
+	font-family: "Arial", cursive, sans-serif;
+	font-size: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#share-buttons img {
+	width: 40px;
+	padding: 5px;
+}
+
+.background-image {
+	width: 100%;
+}
+
+.circle {
+	border-radius: 20%;
+	background: #fff;
+	border: 2px #666;
+	color: #666;
+	text-align: center;
+	font: 32px Arial, sans-serif;
+}
+
+.text3 {
+	font-family: "Arial", cursive, sans-serif;
+	font-size: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+

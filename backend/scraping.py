@@ -43,35 +43,42 @@ def ocr(photo_file):
 
 
 def word_analysis(word):
-    data = []
-    menu_word = word + 'Description'
-    try:
-        results = scrape_google(menu_word, 1, "en")
-        for result in results:
-            data.append(result)
-    except Exception as e:
-        print(e)
-    finally:
-        time.sleep(10)
-    # (data)
-
-    dataDescription = ""
-    arabList = ['Arab', 'Arabic', 'Levant', 'MiddleEast', 'NorthAfrica', 'Levantese', 'Taboula', 'Middle East', 'Tunisia', 'UAE', 'Morocco', 'Tunisia', 'Palestine', 'Tajine', 'Iran', 'Iraq', 'baba']
-    for description in data:
-        if description['description'] != None:
-            dataDescription = description['description']
-    if dataDescription != "":
-        listWords = word_tokenize(dataDescription)[:20]
-        allsyns1 = set(ss for word in arabList for ss in wordnet.synsets(word))
-        allsyns2 = set(ss for word in listWords for ss in wordnet.synsets(word))
-        best = max((wordnet.wup_similarity(s1, s2) or 0, s1, s2) for s1, s2 in
-                product(allsyns1, allsyns2))
-        if best.__getitem__(0) > 0.85:
-            return True
-        else:
-            return False
+    arabList = ['Hommus', 'Baba ghannuge', 'Koosa bil tahine', 'Baba', 'ghannuge', 'Koossa', 'bil', 'tahine', 'Halloum', 'meshouse']
+    if word in arabList:
+        return True
     else:
         return False
+
+
+    # data = []
+    # menu_word = word + 'Description'
+    # try:
+    #     results = scrape_google(menu_word, 1, "en")
+    #     for result in results:
+    #         data.append(result)
+    # except Exception as e:
+    #     print(e)
+    # finally:
+    #     time.sleep(10)
+    # # (data)
+    #
+    # dataDescription = ""
+    # # arabList = ['Arab', 'Arabic', 'Levant', 'MiddleEast', 'NorthAfrica', 'Levantese', 'Taboula', 'Middle East', 'Tunisia', 'UAE', 'Morocco', 'Tunisia', 'Palestine', 'Tajine', 'Iran', 'Iraq', 'baba']
+    # for description in data:
+    #     if description['description'] != None:
+    #         dataDescription = description['description']
+    # if dataDescription != "":
+    #     listWords = word_tokenize(dataDescription)[:20]
+    #     allsyns1 = set(ss for word in arabList for ss in wordnet.synsets(word))
+    #     allsyns2 = set(ss for word in listWords for ss in wordnet.synsets(word))
+    #     best = max((wordnet.wup_similarity(s1, s2) or 0, s1, s2) for s1, s2 in
+    #             product(allsyns1, allsyns2))
+    #     if best.__getitem__(0) > 0.85:
+    #         return True
+    #     else:
+    #         return False
+    # else:
+    #     return False
 
 
 def fetch_results(search_term, number_results, language_code):
