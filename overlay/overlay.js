@@ -4,7 +4,7 @@ var c;
 var sf;
 var i;
 function preload() {
-    bg = loadImage("levant_menu.png")
+    bg = loadImage("menu.png")
 }
 function setup() {
   // The background image must be the same size as the parameters
