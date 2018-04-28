@@ -3,13 +3,13 @@
 شوف شاف is a mobile app that transforms Arabic menus to gorgeous visualizations to help tourists in their exotic local food selection.
 "I am on a see food diet. I see food, I eat it."
 
-## Problem Description
+## Problem Statement
 
   - Provide users with a visual aid
   - Encourage tourists to try local food
   - Inform users about specific food allergies & diets
 
-## Solution
+## Hack Solution
 
 Mobile app providing tourists a way to visualize Arabic menus. Main features include:
   - Realtime visual aid of key Arabic dishes
@@ -17,7 +17,7 @@ Mobile app providing tourists a way to visualize Arabic menus. Main features inc
   - Rating system of dishes
   - Sharing on social media
 
-## Software Components
+## Software Ingredients
 
   - OCR Google Vision API
   - NLP Python NLTK
@@ -25,7 +25,7 @@ Mobile app providing tourists a way to visualize Arabic menus. Main features inc
   - Django Python
   - Ionic Mobile App
 
-## Team
+## Team Members
 
   - Rumail Ali Memon • NYUAD • <rm4631@nyu.edu>
   - Rania Fekih • National Institut of Applied Science and Technologie • <raniafekih@hotmail.com>
