@@ -42,11 +42,11 @@ Mobile app providing tourists a way to visualize Arabic menus. Main features inc
 ### OCR Google Vision API & NLP Python NLTK
 
   - **Noor Naqvi** | Universitat Politècnica de Catalunya • <noorzehra07@gmail.com>
-  - **Rumail Ali Memon** | NYUAD • <rm4631@nyu.edu> 
+  - **Rumail Ali Memon** | NYUAD • <rm4631@nyu.edu>
 
 ## Mentors
 
-  - **Nariman Ammar** | BirZeit University • <nammar@birzeit.edu>
+  - **Dr. Nariman Ammar** | BirZeit University • <nammar@birzeit.edu>
   - **Sama Kanbour** | GE • <k@ge.com>
   - **Stephen Lang** | Cornell Tech • <steplang@gmail.com>
 
@@ -56,4 +56,3 @@ Mobile app providing tourists a way to visualize Arabic menus. Main features inc
 
   - Projector for an iPhone
   - Project laptop for PowerPoint presentation
-
