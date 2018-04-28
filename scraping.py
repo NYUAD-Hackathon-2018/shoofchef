@@ -10,6 +10,8 @@ from bs4 import BeautifulSoup
 # from google_images_download import google_images_download   # importing the library
 import pythonImageSearch
 nltk.download('wordnet')
+nltk.download('punkt')
+
 
 USER_AGENT = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
@@ -64,7 +66,6 @@ def word_analysis(word):
         allsyns2 = set(ss for word in listWords for ss in wordnet.synsets(word))
         best = max((wordnet.wup_similarity(s1, s2) or 0, s1, s2) for s1, s2 in
                 product(allsyns1, allsyns2))
-        print(best)
         if best.__getitem__(0) > 0.85:
             return True
         else:
@@ -126,25 +127,25 @@ def imageSearch(keyword):
     arguments = {"keywords": keyword, "limit": 1, "la": "Arabic"}   # creating list of arguments
     url = response.download(arguments)   # passing the arguments to the function
     return url
-
-
-if __name__ == '__main__':
-    response = ocr("levant_menu.png")
-    i = 0
-    imageList = []
-    finalResponse = []
-    imageList = []
-    for result in response['responses'][0]['textAnnotations']:
-        if i != 0:
-            isDish = word_analysis(result['description'])
-            if isDish:
-                finalResponse.append(result)
-                imageUrl = imageSearch(result['description'])
-                imageList.append({result['description'], imageUrl})
-
-        i = i + 1
-    print(finalResponse)
-    print(imageList)
+#
+#
+# if __name__ == '__main__':
+#     response = ocr("levant_menu.png")
+#     i = 0
+#     imageList = []
+#     finalResponse = []
+#     imageList = []
+#     for result in response['responses'][0]['textAnnotations']:
+#         if i != 0:
+#             isDish = word_analysis(result['description'])
+#             if isDish:
+#                 finalResponse.append(result)
+#                 imageUrl = imageSearch(result['description'])
+#                 imageList.append({result['description'], imageUrl})
+#
+#         i = i + 1
+#     print(finalResponse)
+#     print(imageList)
 
 
 

@@ -197,7 +197,6 @@ class googleimagesdownload:
         # Open the link
         browser.get(url)
         time.sleep(1)
-        print("Getting you a lot of images. This may take a few moments...")
 
         element = browser.find_element_by_tag_name("body")
         # Scroll down
@@ -314,8 +313,6 @@ class googleimagesdownload:
             raise e
         except IOError as e:
             raise e
-
-        print("completed ====> " + image_name)
         return
 
     def similar_images(self, similar_images):
