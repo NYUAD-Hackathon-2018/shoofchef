@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> نقطة </title>
+		<link href="{% static 'dropzone.css' %}"  	rel="stylesheet" type="text/css" />
+		<link href="{% static 'style.css' %}"  		rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<header>
+			<h4> نقطة </h4>
+		</header>
+		<form class="dropzone" action="{% url "upload" %}" method="post" enctype="multipart/form-data">
+			{% csrf_token %}
+		</form>
+		<div class="images">
+			{% for img in images %}
+				<img src="./static/files/{{ img }}">
+			{% endfor %}
+		</div>
+		<script src="{% static 'jquery.min.js' %}" 	type="text/javascript"></script>
+		<script src="{% static 'dropzone.js' %}" 	type="text/javascript"></script>
+		<script src="{% static 'upload.js' %}" 		type="text/javascript"></script>
+	</body>
+</html>
