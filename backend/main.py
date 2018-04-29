@@ -18,6 +18,7 @@ def api_image_description():
         return str(image_url)
     elif request.method == 'POST':
         file = request.files.get('imagefile')
+        print (file)
         file.save('image.png')
         response = scraping.ocr('image.png')
         i = 0
@@ -29,7 +30,13 @@ def api_image_description():
                     finalResponse.append(result)
             i = i + 1
         print(finalResponse)
-        return json.dumps(finalResponse)
+        print(response['responses'][0]['fullTextAnnotation']['pages'][0]['width'])
+        print(response['responses'][0]['fullTextAnnotation']['pages'][0]['height'])
+
+        return json.dumps({'response': finalResponse,
+                    'width': response['responses'][0]['fullTextAnnotation']['pages'][0]['width'],
+                    'height': response['responses'][0]['fullTextAnnotation']['pages'][0]['height']
+                })
 
 
 if __name__ == '__main__':

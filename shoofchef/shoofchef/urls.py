@@ -20,5 +20,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.home, name='home'),
     url(r'^camera/', views.camera, name='camera'),
-
+    url(r'^views/(?P<count>\w+)/$',    views.views, name='views'),
 ]

@@ -43,7 +43,7 @@ def ocr(photo_file):
 
 
 def word_analysis(word):
-    arabList = ['Hommus', 'Baba ghannuge', 'Koosa bil tahine', 'Baba', 'ghannuge', 'Koossa', 'bil', 'tahine', 'Halloum', 'meshouse']
+    arabList = ['Hommus', 'Baba ghannuge', 'Koosa bil tahine', 'Baba', 'ghannuge', 'Koossa', 'bil', 'tahine', 'Halloum', 'meshouse', 'sambousak', 'dijej', 'Batata', 'harrah', 'Kibbeh', 'lahme', 'Falafel', 'Jawaneh']
     if word in arabList:
         return True
     else:
