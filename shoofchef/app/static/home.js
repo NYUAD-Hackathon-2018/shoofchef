@@ -45,12 +45,12 @@ function mouseClicked() {
             } else if (data["response"][i]["description"] == "ghannuge") {
                 document.location.href ="http://localhost:8000/views/1/";
             } else if (data["response"][i]["description"] == "Koossa" ) {
-
+                document.location.href ="http://localhost:8000/views/2/";
             } else if (data["response"][i]["description"] == "bil") {
-
+                document.location.href ="http://localhost:8000/views/2/";
             }
             else if (data["response"][i]["description"] == "tahine") {
-
+                document.location.href ="http://localhost:8000/views/2/";
             }
         }
     }
