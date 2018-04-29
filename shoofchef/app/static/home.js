@@ -6,12 +6,15 @@ var lst = {};
 
 function preload() {
     bg = loadImage("./static/img/photo.png")
+    inst= loadImage("./static/inst.png")
 }
 
 function setup() {
     createCanvas(bg.width, bg.height);
     background(100)
     image(bg, 0, 0)
+    inst.resize(bg.width/2,0)
+    image(inst,(bg.width/2)-(inst.width/2),0)
     sf = 1 * (bg.width / data["width"]);
 }
 
