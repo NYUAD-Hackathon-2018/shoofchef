@@ -36,5 +36,5 @@ SQLAlchemy==1.2.7
 tabulate==0.7.5
 termcolor==1.1.0
 uritemplate==3.0.0
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 wincertstore==0.2
