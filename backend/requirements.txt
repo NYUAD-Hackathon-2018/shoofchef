@@ -15,7 +15,7 @@ google==2.0.1
 google-api-python-client==1.6.2
 google-images-download==2.0.4
 gunicorn==19.7.1
-httplib2==0.11.3
+httplib2==0.18.0
 itsdangerous==0.24
 Jinja2==2.10
 jmespath==0.9.3
